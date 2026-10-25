@@ -1,0 +1,45 @@
+{
+  "analysis_version": "1.4",
+  "representation_training_set": "all secure BTS/RCF SESN-family objects with finite uncensored M_peak/rise/fade; no IceCube time cut",
+  "N_optical_reference": 384,
+  "N_icetracks_overlap_projection": 241,
+  "features": [
+    "peakabs_num",
+    "log10_rise",
+    "log10_fade"
+  ],
+  "standard_scaler_mean": [
+    -18.1921875,
+    1.1001888180681227,
+    1.1632610360261906
+  ],
+  "standard_scaler_scale": [
+    1.39168097781439,
+    0.24247860359151677,
+    0.22618130734282302
+  ],
+  "pca_components": [
+    [
+      -0.5707559043518019,
+      0.5498791000344028,
+      0.6098119980722841
+    ],
+    [
+      0.6298194509712378,
+      0.7696735136091748,
+      -0.10454731764514849
+    ],
+    [
+      0.5268445281350517,
+      -0.3244004589914479,
+      0.7856202551998596
+    ]
+  ],
+  "explained_variance_ratio": [
+    0.6175718196202078,
+    0.2183154122924036,
+    0.16411276808738856
+  ],
+  "icecube_endpoint_mjd": 59722.0,
+  "note": "PCA is fit on the optical reference set; IceTracks-overlap objects are projected without refitting."
+}

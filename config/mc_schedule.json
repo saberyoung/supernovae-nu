@@ -1,0 +1,30 @@
+{
+  "target_B_cal": 2000,
+  "target_B_global": 10000,
+  "reuse": {
+    "cal_trials": 200,
+    "global_trials": 500,
+    "cal_seeds": [
+      810000,
+      810199
+    ],
+    "global_seeds": [
+      910000,
+      910499
+    ]
+  },
+  "new": {
+    "cal_trials": 1800,
+    "global_trials": 9500,
+    "cal_seeds": [
+      820000,
+      821799
+    ],
+    "global_seeds": [
+      920000,
+      929499
+    ],
+    "chunks": 57
+  },
+  "default_workers": 6
+}

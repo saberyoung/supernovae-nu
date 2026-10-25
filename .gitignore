@@ -1,0 +1,6 @@
+figures/output/
+reproduced/
+work/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,10 @@
+scenario,label,matched_test,target_power_percent,delta_z_synthetic_independent,delta_z_joint_icecube,joint_to_synthetic_ratio
+compact_10NN_region,Compact 10-NN region,knn10,50,1.1827649850588855,1.91438234247063,1.6185652827516872
+compact_10NN_region,Compact 10-NN region,knn10,80,1.476949634443542,2.5004143646408843,1.6929584505316897
+compact_10NN_region,Compact 10-NN region,knn10,90,,2.798885511651469,
+broad_PC1_upper_tail,Broad PC1,linear_PC1_PC2,50,0.5478632963046928,1.1493145241406717,2.0978125964866305
+broad_PC1_upper_tail,Broad PC1,linear_PC1_PC2,80,0.7178927680798005,1.4813111318118304,2.063415593075272
+broad_PC1_upper_tail,Broad PC1,linear_PC1_PC2,90,0.830159023668639,1.672381930184805,2.014532014353364
+exact_IcBL_subtype,Ic-BL subtype,max_subtype,50,0.5011782726522918,1.156765531765532,2.308091940306588
+exact_IcBL_subtype,Ic-BL subtype,max_subtype,80,0.6779191704960528,1.4578862660944203,2.150531109818953
+exact_IcBL_subtype,Ic-BL subtype,max_subtype,90,0.7368328031106398,1.628272804054054,2.2098267031273298

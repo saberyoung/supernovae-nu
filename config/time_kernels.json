@@ -1,0 +1,38 @@
+{
+  "status": "FROZEN_BEFORE_FORMAL_ICETRACKS_UNBLINDING",
+  "primary_discovery_time_model": {
+    "shape": "Gaussian",
+    "center": "BTS peak_mjd",
+    "sigma_days": [
+      10.0,
+      30.0,
+      100.0
+    ],
+    "source_score": "maximum TS over the three fixed kernels",
+    "source_pvalue": "background trials repeat the same max-over-three procedure",
+    "phenotype_dependence": "none"
+  },
+  "spectral_model": {
+    "primary": "standard IceCube point-source power-law energy model with gamma profiled over [1,4]",
+    "robustness": [
+      "fixed/near-fixed gamma=2.0",
+      "fixed/near-fixed gamma=2.5"
+    ]
+  },
+  "long_timescale_robustness": {
+    "additional_sigma_days": [
+      300.0
+    ],
+    "not_in_primary_bank": true
+  },
+  "rationale": {
+    "benchmark_false_alarm_probability": 0.001,
+    "benchmark_ideal_matched_filter_snr": 4.0,
+    "mean_power_over_true_sigma_10_30_100_and_delay_minus30_0_plus30": {
+      "G30": 0.428238,
+      "G10_30_100": 0.536895,
+      "G10_30_100_300": 0.518408
+    },
+    "interpretation": "Three-scale bank is more robust over transient-scale signals; adding 300 d is reserved for a long-timescale branch."
+  }
+}

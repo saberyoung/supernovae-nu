@@ -1,0 +1,16 @@
+name: bts-icetracks
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy<1.18
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - astropy>=7.0
+  - pyyaml
+  - tqdm
+  - pip
+  - pip:
+      - git+https://github.com/icecube/skyllh.git@v26.1.0

@@ -1,0 +1,67 @@
+{
+  "N_sources": 241,
+  "B_calibration": 2000,
+  "B_global": 10000,
+  "n_injection_trials_per_scenario_per_delta": 20000,
+  "deltas_z": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    1.75,
+    2.0,
+    2.25,
+    2.5,
+    2.75,
+    3.0
+  ],
+  "observed_statistics": {
+    "knn10": 2.0396643815301907,
+    "linear_PC1_PC2": 1.2972672044856755,
+    "max_subtype": -1.3402247139145547
+  },
+  "null_thresholds": {
+    "knn10": {
+      "0.01": {
+        "threshold": 3.761460608683874,
+        "achieved_empirical_tail_fraction": 0.01
+      },
+      "0.05": {
+        "threshold": 3.2802974199139783,
+        "achieved_empirical_tail_fraction": 0.05
+      }
+    },
+    "linear_PC1_PC2": {
+      "0.01": {
+        "threshold": 37.27272599453915,
+        "achieved_empirical_tail_fraction": 0.01
+      },
+      "0.05": {
+        "threshold": 24.32517109370006,
+        "achieved_empirical_tail_fraction": 0.05
+      }
+    },
+    "max_subtype": {
+      "0.01": {
+        "threshold": 1.743614978190902,
+        "achieved_empirical_tail_fraction": 0.01
+      },
+      "0.05": {
+        "threshold": 0.5906772229646303,
+        "achieved_empirical_tail_fraction": 0.05
+      }
+    }
+  },
+  "scenarios_regenerated": [
+    "compact_10NN_region",
+    "broad_PC1_upper_tail",
+    "exact_IcBL_subtype"
+  ],
+  "scenario_not_regenerated": {
+    "smooth_local_region": "Exact Gaussian bandwidth was not preserved in frozen metadata; definition intentionally not reconstructed after unblinding."
+  },
+  "interpretation": "Additive calibrated-z method/effect-size benchmark using actual joint detector-level null covariance; not detector-level flux sensitivity."
+}

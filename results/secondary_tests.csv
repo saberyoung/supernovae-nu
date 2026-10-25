@@ -1,0 +1,10 @@
+test,N,statistic,global_p,beta_PC1_standardized,beta_PC2_standardized,direction_M_peak_std,direction_log_t_half_rise_std,direction_log_t_half_fade_std,note,winning_subtype,classes_in_max
+linear_PC1_PC2_gradient,241,1.2972672044856755,0.8523147685231477,-0.017221224237681045,-0.07057744322099879,-0.04672991605636249,-0.07306879424221693,0.0011657670207917952,,,
+subtype_SN IIb,40,-4.411869959123891,0.2742725727427257,,,,,,,,
+subtype_SN Ib,61,-6.679382324404372,0.48895110488951105,,,,,,,,
+subtype_SN Ic,66,-7.842469847715643,0.6542345765423457,,,,,,,,
+subtype_SN Ic-BL,34,-4.941887734654962,0.48635136486351366,,,,,,,,
+subtype_SN Ibn,11,-2.3919230968059546,0.44945505449455053,,,,,,,,
+subtype_SLSN-I,27,-1.3402247139145547,0.052894710528947106,,,,,,,,
+subtype_SN Icn,2,-2.3538761979207994,0.7717228277172283,,,,,,Reported individually; N=2 and excluded from frozen max-subtype synthetic benchmark,,
+max_predefined_subtype,241,-1.3402247139145547,0.3257674232576742,,,,,,,SLSN-I,"SN IIb,SN Ib,SN Ic,SN Ic-BL,SN Ibn,SLSN-I"

@@ -1,0 +1,66 @@
+{
+  "version": "1.4.1",
+  "status": "FROZEN_BEFORE_FORMAL_ICETRACKS_UNBLINDING",
+  "optical_reference": {
+    "N": 384,
+    "classes": [
+      "SN IIb",
+      "SN Ib",
+      "SN Ic",
+      "SN Ic-BL",
+      "SN Ibn",
+      "SN Icn",
+      "SLSN-I"
+    ],
+    "features": [
+      "BTS peak absolute magnitude",
+      "log10 BTS half-rise time t_1/2,rise",
+      "log10 BTS half-fade time t_1/2,fade"
+    ],
+    "note": "BTS rise/fade are half-maximum timescales, not explosion-to-peak or diffusion times."
+  },
+  "neutrino_overlap_N": 241,
+  "representation": {
+    "method": "z-score standardization + PCA",
+    "training": "full optical reference sample only, before IceCube temporal restriction",
+    "primary_space": [
+      "PC1",
+      "PC2"
+    ],
+    "PC1_PC2_variance_fraction": 0.8358872319126114
+  },
+  "primary_test": {
+    "source_statistic": "max TS over identical Gaussian time kernels sigma=10,30,100 d centered at BTS observed peak",
+    "population_statistic": "k=10 nearest-neighbour hotspot in frozen PC1-PC2 space, excluding center source score",
+    "global_null": "joint detector-level IceCube background realizations"
+  },
+  "predefined_robustness": [
+    "m_peak <= 18.5",
+    "r-band peak only",
+    "IceTracks endpoint buffer of 100 d",
+    "exclude SLSN-I and rebuild/projection check",
+    "PC1-PC2-PC3 geometry",
+    "k = 5, 15, 20",
+    "300 d long-timescale branch",
+    "predefined spectroscopic subtype tests",
+    "global linear PC-gradient test",
+    "distance/declination/epoch-matched Type Ia negative control"
+  ],
+  "optical_stability": {
+    "bootstrap_trials": 1000,
+    "PC1_projection_corr_median": 0.999829707727588,
+    "PC2_projection_corr_median": 0.9917564950716911,
+    "k10_neighbor_overlap_mean_median": 0.8161825726141081,
+    "leave_one_subtype_out_note": "SLSN-I has the largest geometric influence; hence an exclude-SLSN robustness branch is predefined."
+  },
+  "negative_control": {
+    "N": 241,
+    "matching_variables": [
+      "declination",
+      "peak epoch",
+      "log10(redshift)"
+    ],
+    "peak_magnitude_matched": false,
+    "reason": "apparent magnitude is not an IceCube exposure variable and differs intrinsically between Ia and SESN populations"
+  }
+}

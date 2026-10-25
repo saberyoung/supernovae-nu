@@ -1,0 +1,33 @@
+{
+  "status": "BLINDED_SYNTHETIC_BENCHMARK",
+  "N_sources": 241,
+  "N_null_trials": 100000,
+  "N_injection_trials_per_scenario_per_delta": 20000,
+  "global_alpha": 0.01,
+  "null_thresholds": {
+    "knn10": 3.8815013093466084,
+    "knn_bank_5_10_20": 4.114404239477677,
+    "linear_PC1_PC2": 9.297895019563027,
+    "max_subtype": 2.9375919666712016
+  },
+  "subtypes_in_max_subtype_test": {
+    "SLSN-I": 27,
+    "SN IIb": 40,
+    "SN Ib": 61,
+    "SN Ibn": 11,
+    "SN Ic": 66,
+    "SN Ic-BL": 34
+  },
+  "injection_scenarios": {
+    "compact_10NN_region": "same positive z shift injected into the 10 optical nearest neighbours of a random center",
+    "smooth_local_region": "Gaussian-decaying positive z shift around a random optical-phenotype center",
+    "broad_PC1_upper_tail": "positive z shift injected into upper 20% of PC1",
+    "exact_IcBL_subtype": "positive z shift injected into all secure SN Ic-BL objects"
+  },
+  "decision": {
+    "primary_discovery": "10-nearest-neighbour phenotype hotspot",
+    "secondary_global_phenotype": "linear PC1-PC2 trend statistic",
+    "secondary_confirmatory": "max over predefined spectroscopic subtype stack scores",
+    "reason": "The tests have complementary power. kNN10 is strongest for compact unknown phenotype regions; linear PC trend is strongest for broad smooth manifold trends; subtype stacking is strongest only when the true signal follows an existing subtype label."
+  }
+}

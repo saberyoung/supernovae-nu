@@ -1,0 +1,57 @@
+{
+  "N": 241,
+  "role": "negative control for IceCube exposure/distance systematics",
+  "matching_variables": [
+    "declination",
+    "peak epoch",
+    "log10(redshift)"
+  ],
+  "not_matched": [
+    "peak apparent magnitude",
+    "optical phenotype"
+  ],
+  "reason_not_match_peakmag": "At fixed redshift ordinary SNe Ia are intrinsically brighter than SESNe; peak magnitude is not an IceCube exposure variable.",
+  "weights": {
+    "dec_deg": 2.0,
+    "peak_mjd": 2.0,
+    "log10z": 6.0
+  },
+  "diagnostics": {
+    "dec_deg": {
+      "sesn_mean": 26.625872291378514,
+      "control_mean": 26.535574458275704,
+      "sesn_median": 25.675,
+      "control_median": 27.00863888888889,
+      "SMD": -0.0037301462037323077,
+      "KS_D": 0.029045643153526972,
+      "KS_p": 0.9999619383335708
+    },
+    "peak_mjd": {
+      "sesn_mean": 58973.13203319502,
+      "control_mean": 58975.949004149385,
+      "sesn_median": 58971.86,
+      "control_median": 58991.81,
+      "SMD": 0.008178057358295816,
+      "KS_D": 0.04149377593360996,
+      "KS_p": 0.9859510600890492
+    },
+    "redshift_num": {
+      "sesn_mean": 0.05249174273858921,
+      "control_mean": 0.04527414937759336,
+      "sesn_median": 0.034,
+      "control_median": 0.034,
+      "SMD": -0.15993479412421877,
+      "KS_D": 0.07053941908713693,
+      "KS_p": 0.5874133776186331
+    },
+    "peakmag": {
+      "sesn_mean": 18.07005518672199,
+      "control_mean": 17.200958091286303,
+      "sesn_median": 18.2555,
+      "control_median": 17.2674,
+      "SMD": -0.8275551675876329,
+      "KS_D": 0.45228215767634855,
+      "KS_p": 1.390877535861441e-22
+    }
+  }
+}

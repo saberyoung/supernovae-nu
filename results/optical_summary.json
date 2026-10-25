@@ -1,0 +1,14 @@
+{
+  "ordinary4_N": 316,
+  "ordinary4_silhouette_PC12": -0.043254853449838496,
+  "ordinary4_silhouette_PC123": -0.02593073103410652,
+  "ordinary4_knn10_same_subtype_purity": 0.29050632911392404,
+  "ordinary4_knn10_random_expectation": 0.2618645770544505,
+  "ordinary4_knn10_permutation_p": 0.0038996100389961006,
+  "main6_N": 382,
+  "main6_silhouette_PC12": -0.011270910337611961,
+  "main6_silhouette_PC123": 0.007072006967971047,
+  "main6_knn10_same_subtype_purity": 0.33036649214659686,
+  "main6_knn10_random_expectation": 0.19757870580313586,
+  "main6_knn10_permutation_p": 9.999000099990002e-05
+}

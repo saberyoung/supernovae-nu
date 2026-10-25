@@ -1,0 +1,25 @@
+{
+  "N_sources": 241,
+  "k": 10,
+  "T_observed": 2.0396643815301907,
+  "global_p": 0.5393460653934606,
+  "hotspot_center_ZTFID": "ZTF21abdkojo",
+  "hotspot_center_IAUID": "SN2021ofi",
+  "hotspot_center_type": "SN Ib",
+  "hotspot_center_PC1": -1.6137896625450971,
+  "hotspot_center_PC2": -0.1759657351786308,
+  "best_individual_ZTFID": "ZTF20acwqqjs",
+  "best_individual_IAUID": "SN2020acat",
+  "best_individual_type": "SN IIb",
+  "best_individual_z": 2.9678915817176357,
+  "best_individual_p_calibrated": 0.0014992503748125937,
+  "hotspot_member_z_sum": 6.449985107954075,
+  "hotspot_member_mean_z": 0.6449985107954075,
+  "hotspot_member_positive_z_count": 9,
+  "hotspot_subtype_counts": {
+    "SN Ic": 4,
+    "SN Ib": 2,
+    "SN IIb": 2,
+    "SN Ic-BL": 2
+  }
+}
